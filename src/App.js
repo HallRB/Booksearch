@@ -1,32 +1,34 @@
 import React, { Component } from "react";
-import NavBar from "./components/NavBar";
-import Header from "./components/Header";
-import Results from "./components/Results";
-import Search from "./components/Search";
-import Wrapper from "./components/Wrapper";
+import NavBar from "./NavBar";
+import Header from "./Header";
+import Results from "./Results";
+import Search from "./Search";
+import Wrapper from "./Wrapper";
+import NoMatch from "./pages/NoMatch";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
 
 import "./App.css";
 
 class App extends Component {
-  state = {
-    results
-  }
+ 
 
-  render() {
-    return (
-      <Router>
-        <div>
-          <NavBar />
-          <Header />
-          <Wrapper>
-            <Route exact path="/" Component={search} />
-            <Route exact path="/search" Component={search} />
-            <Route exact path="/saved" Component={saved} />
-          </Wrapper>
-        </div>
-      </Router>
-    )
+    render() {
+      return (
+        <Router>
+          <div>
+            <NavBar />
+            <Header />
+            <Wrapper>
+              <Route exact path="/" Component={Search} />
+              <Route exact path="/search" Component={Search} />
+              <Route exact path="/saved" Component={Saved} />
+              <Route exact path="/noMatch" Component={NoMatch} />
+            </Wrapper>
+          </div>
+        </Router>
+      )
+    };
   };
-};
-
-export default App;
+  
+  export default App;
