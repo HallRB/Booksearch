@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "search and save books through google books api",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
