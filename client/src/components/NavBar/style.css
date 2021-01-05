@@ -1,18 +1,23 @@
 nav {
-    background-color: rgb(255,143,111)
+    font-family: 'Bebas Neue', cursive;
+    background-image: url(../Header/booksbackground4.jpg);
 }
 
 a {
     text-decoration: none;
-    color: white
+    color: rgb(255, 255, 255)
 }
  a:hover {
     text-decoration: underline;
-    color: white
+    color: rgb(255, 255, 255)
 }
 
 .navbar-brand {
     font-size: 35px;
+}
+
+h1 {
+    color: cadetblue;
 }
 
 .nav-item {
